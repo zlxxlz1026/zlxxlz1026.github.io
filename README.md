@@ -1,45 +1,29 @@
-# jekyll-uno
+Bheema is a theme suitabel for image heavy journal kind of websites. 
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+Demo: [http://webjeda.com/ashwath/](http://webjeda.com/ashwath/)
 
-> :warning:
-  This theme requires ruby and rubygems installed
 
-### Features
+## Installation
+* Fork the repository
+* Go to settings and set Github Pages source as master.
+* Your new site should be ready.
 
-* Clean layout
-* Resposive layout
-* Pagination
-* Syntax highlighting
-* Social links
-* Tags listing page
-* Categories listing page
-* Google Analytics integration
-* Disqus integration
 
----
+## Screenshots
+Default theme:
 
-### Install and Test
+![ashwath jekyll theme](http://webjeda.com/ashwath/images/Default.png)
 
-1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
-2. Enter the folder: `cd jekyll-uno/`
-3. If you don't have bundler installed: `gem install bundler`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `bundle exec jekyll serve --watch`
+Color schemes (Full version)
 
-Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+![ashwath jekyll theme](http://webjeda.com/ashwath/images/Purple.png)
 
----
+![ashwath jekyll theme](http://webjeda.com/ashwath/images/Blood.png)
 
-### Demo and Download
+![ashwath jekyll theme](http://webjeda.com/ashwath/images/Mango.png)
 
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
 
-![jekyll-uno - free Jekyll theme](/screenshot.png)
+For more themes visit - [https://jekyll-themes.com](https://jekyll-themes.com)
 
----
-
-### Copyright and license
-
-It is under [the MIT license](/LICENSE).
+## License
+MIT License
