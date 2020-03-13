@@ -1,33 +1,38 @@
-$(document).ready(function() {
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
 
-
-  $('a.blog-button').click(function() {
-    // If already in blog, return early without animate overlay panel again.
-    if (location.hash && location.hash == "#blog") return;
-    if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
-    $('.main-post-list').removeClass('hidden');
-    currentWidth = $('.panel-cover').width();
-    if (currentWidth < 2000) {
-      $('.panel-cover').addClass('panel-cover--collapsed');
+$(document).ready(function () {
+  $('a.blog-button').click(function (e) {
+    if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
+    currentWidth = $('.panel-cover').width()
+    if (currentWidth < 960) {
+      $('.panel-cover').addClass('panel-cover--collapsed')
+      $('.content-wrapper').addClass('animated slideInRight')
     } else {
-      $('.panel-cover').css('max-width',currentWidth);
-      $('.panel-cover').animate({'max-width': '320px', 'width': '22%'}, 400, swing = 'swing', function() {} );
+      $('.panel-cover').css('max-width', currentWidth)
+      $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function () {})
     }
+  })
 
-    
-  });
-
-  if (window.location.hash && window.location.hash == "#blog") {
-    $('.panel-cover').addClass('panel-cover--collapsed');
-    $('.main-post-list').removeClass('hidden');
+  if (window.location.hash && window.location.hash == '#blog') {
+    $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
-  if (window.location.pathname.substring(0, 5) == "/tag/") {
-    $('.panel-cover').addClass('panel-cover--collapsed');
+  if (window.location.pathname !== '{{ site.baseurl }}/' && window.location.pathname !== '{{ site.baseurl }}/index.html') {
+    $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
-  $('.btn-mobile-menu__icon').click(function() {
-    // 导航按钮被点击
-    // this.style.backgroundColor = '#fff'; 设置颜色后会自动消失
-  });  
-});
+  $('.btn-mobile-menu').click(function () {
+    $('.navigation-wrapper').toggleClass('visible animated bounceInDown')
+    $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
+  })
+
+  $('.navigation-wrapper .blog-button').click(function () {
+    $('.navigation-wrapper').toggleClass('visible')
+    $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
+  })
+
+})
