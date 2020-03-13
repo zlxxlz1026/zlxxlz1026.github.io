@@ -1,21 +1,20 @@
 ---
 layout: post
 title: MathJax Test
+subtitle: mathjax in markdown
 date: 2017-07-30
 categories: test
-tags: mathjax mathjax1 mathjax2 mathjax3
+tags: mathjax
 ---
 
-mathjax in markdown :)
+mathjax in markdown :
 
 **这是一个不`align`的公式**：
-
 $$
 \forall \alpha \in A, \quad a \cdot b = 0
 $$
 
 **这是一个`align`的公式**：
-
 $$
 \text{for OTP : $\qquad$ if }\quad E(k,\:m)=c\\
 \begin{align}
