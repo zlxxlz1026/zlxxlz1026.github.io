@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MathJax Test
-subtitle: mathjax in markdown
+subtitle: mathjax
 date: 2017-07-30
 categories: test
 tags: mathjax
